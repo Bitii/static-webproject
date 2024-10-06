@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*<------ Navigációs menü eleje ------>*/
+nav {
+    background: #d1ac7c;
+    height: 65px;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: 1px;
+
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 25px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+li a.active,li a:hover {
+    background: #a87124;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width:1000px) {
+    label.logo {
+        font-size: 35px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:530px) {
+    label.logo {
+        font-size: 22px;
+    }
+}
+
+@media (max-width:1225px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #d1ac7c;
+        top: 65px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    li a:hover,li a.active {
+        background: none;
+        color: #2c3e50;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+/*<------ Navigációs menü vége ------>*/
+
+/*<------ Háttér beállítása ------>*/
+body {
+    background: url('../kepek/arhatter.png') #ebdcc9 no-repeat center center fixed;
+}
+/*<------ Tartalmi elemek elhelyezése és formázása ------>*/
+#keret{
+    margin:auto;
+    width:900px;
+    background-color: #ebdcc9;
+}
+h1{
+    text-align: center;
+    font-family:'Sofia';
+    font-size:90px;
+    padding:15px;
+}
+h2{
+    margin-left:25px;
+    font-family:'Agbalumo';
+    font-size:40px;
+}
+table{
+    width: 800px;
+    border-width: 3px;
+    border-style:none;
+    border-collapse:collapse;
+    margin:20px 50px;
+}
+th, td{
+    padding:5px;
+}
+.ar{
+    text-align:right;
+}
+.kezeles, .ar{
+    font-size:23px;
+}
+.leirat{
+    font-family:'Bodoni Moda';
+    font-size:15px
+}
